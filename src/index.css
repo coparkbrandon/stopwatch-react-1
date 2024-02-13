@@ -1,13 +1,53 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'Roboto', 'Oxygen', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(Assets/pexels-brian-jr-asare-13221799.jpg);
+  background-size: cover;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 30px;
+  justify-content: center;
+  
 }
+
+.display {
+  font-size: 5rem;
+  margin-bottom: 25px;
+}
+
+.controls button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.start-button:hover {
+  background-color: green;
+}
+
+.stop-button:hover {
+  background-color: red;
+}
+
+.reset-button:hover {
+  background-color: #e5e5e5;
+}
+
